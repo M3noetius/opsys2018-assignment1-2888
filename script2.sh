@@ -16,7 +16,7 @@ fi
 tar -xvf $1 -C $tmpuzip > /dev/null
 
 for file in $(find $tmpuzip -type f -name "*.txt"); do 
-	cat $file | grep "^https" | head -n 1 $file >> $repos
+	cat $file | grep "^https" | head -n 1 >> $repos
 done
 
 # Clean up extracted data
